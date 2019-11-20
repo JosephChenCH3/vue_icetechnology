@@ -66,9 +66,6 @@ export default {
           vm.originData[str].cell8 = element.cell8
           // vm.originData[str].star = false
           // 將key值轉成索引 依索引填入cell8
-        } else {
-          // console.log('Data Error')
-          return false
         }
       })
       const array = Object.keys(vm.originData3)
@@ -81,9 +78,6 @@ export default {
         let str2 = str1.split('C4').join('')
         if (element.cell4 === vm.originData[str2].cell4) {
           vm.originData[str2].cell9 = element.cell9
-        } else {
-          // console.log('Data Error')
-          return false
         }
       })// 將cell4值轉成索引 依索引填入cell8
       // console.log('1', this.originData, '4', this.originData4)
